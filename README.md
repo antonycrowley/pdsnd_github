@@ -1,17 +1,33 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
+# Bikeshare
+> Bikeshare helps user to pull, analize and five useful information about bikesharing
+> system provider Motivate on 3 major cities Chicago, New York and Washington.
+
+## Using bikeshare.py
+To start it open a terminal where the fie is located and type: python bikeshare_2.py
+After starting the prompt walks you trough it. 🚶
+You can inquiry information filtering by month and day of the week, or go without filter
+and select all months or all days.
+
+The informatio) output shows:
+> Most frequent times of travel.
+>
+>>- Most common month.
+>>- Most common day.
+>>- Most common hour.
+
+> Most popular station and trip.
+
+> Trip curation. 
+
+
+
 
 ### Date created
-Include the date you created this project and README file.
-
-### Project Title
-Replace the Project Title
-
-### Description
-Describe what your project is about and what it does
+📆 January 29, 2023. 
 
 ### Files used
-Include the files used
+📁 Include the files used
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Inspired on https://github.com/GoogleChrome/lighthouse.git READ.me
 
