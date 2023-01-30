@@ -3,8 +3,10 @@
 > system provider Motivate on 3 major cities Chicago, New York and Washington.
 
 ## Using bikeshare.py
-To start it open a terminal where the fie is located and type: python bikeshare_2.py
+To start it open a terminal where the fie is located and type: `python bikeshare_2.py`
+
 After starting the prompt walks you trough it. 🚶
+
 You can inquiry information filtering by month and day of the week, or go without filter
 and select all months or all days.
 
@@ -26,7 +28,14 @@ The informatio) output shows:
 📆 January 29, 2023. 
 
 ### Files used
-📁 Include the files used
+📁Bikshare_2.py
+
+📁Chicago.csv
+
+📁new_york_city.csv
+
+📁washington.csv
+
 
 ### Credits
 Inspired on https://github.com/GoogleChrome/lighthouse.git READ.me
