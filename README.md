@@ -10,18 +10,16 @@ After starting the prompt walks you trough it. 🚶
 You can inquiry information filtering by month and day of the week, or go without filter
 and select all months or all days.
 
-The informatio) output shows:
-> Most frequent times of travel.
+The information. output shows:
+> 1. Most frequent times of travel.
 >
 >>- Most common month.
 >>- Most common day.
 >>- Most common hour.
-
-> Most popular station and trip.
-
-> Trip curation. 
-
-
+>
+> 2. Most popular station and trip.
+>
+> 3. Trip curation. 
 
 
 ### Date created
