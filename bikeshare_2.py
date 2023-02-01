@@ -249,6 +249,7 @@ def raw_data_visualization(df):
                         if answer == 'yes':
                             temp_df = df.loc[ i*5 : (i+1)*5-1]
                             if not temp_df.empty:
+                                pd.set_option('display.max_columns', 200)
                                 print(temp_df)                                      #Valid ans 2
                                 i += 1
                             else:
