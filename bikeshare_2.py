@@ -25,7 +25,7 @@ def get_filters():
     # get user input for city (chicago, new york city, washington).
     # HINT: Use a while loop to handle invalid inputs
     while True:
-        city = input('Please enter city name on which you want to review data: ').lower()
+        city = input('Please enter city name (Chicago, New York City, Washington) on which you want to review data: ').lower()
         if city in ['chicago', 'new york city', 'washington']:
             break
         else:
@@ -211,13 +211,13 @@ def helper_seconds_to_statement(seconds):
     seconds = remaining_seconds
     statement = ''
     if days != 0:
-        statement += str(f'{days} days, ')
+        statement += f'{days} days, '
     if hours != 0:
-        statement += str(f'{hours} hours, ')
+        statement += f'{hours} hours, '
     if minutes != 0:
-        statement += str(f'{minutes} minutes, ')
+        statement += f'{minutes} minutes, '
     if seconds != 0:
-        statement += str(f'{seconds} seconds.')
+        statement += f'{seconds} seconds.'
 
     return statement
 
@@ -249,6 +249,7 @@ def raw_data_visualization(df):
                         if answer == 'yes':
                             temp_df = df.loc[ i*5 : (i+1)*5-1]
                             if not temp_df.empty:
+                                pd.set_option('display.max_columns', 200)
                                 print(temp_df)                                      #Valid ans 2
                                 i += 1
                             else:
@@ -276,9 +277,15 @@ def main():
             raw_data_visualization(df)
         else:
             print('No results with filters applied. Try wider ones')
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
-            break
+        while True:
+            restart = input('\nWould you like to restart? Enter yes or no.\n').lower()
+            if restart in ['yes', 'no']:
+                if restart == 'yes':
+                    break
+                else:
+                    exit()
+            else:
+                print('Please enter a valid selction. Enter yes or no.')
 
 
 if __name__ == "__main__":
