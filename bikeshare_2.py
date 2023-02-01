@@ -276,9 +276,15 @@ def main():
             raw_data_visualization(df)
         else:
             print('No results with filters applied. Try wider ones')
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
-            break
+        while True:
+            restart = input('\nWould you like to restart? Enter yes or no.\n').lower()
+            if restart in ['yes', 'no']:
+                if restart == 'yes':
+                    break
+                else:
+                    exit()
+            else:
+                print('Please enter a valid selction. Enter yes or no.')
 
 
 if __name__ == "__main__":
