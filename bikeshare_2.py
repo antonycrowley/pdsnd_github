@@ -211,9 +211,9 @@ def helper_seconds_to_statement(seconds):
     seconds = remaining_seconds
     statement = ''
     if days != 0:
-        statement += str(f'{days} days, ')
+        statement += f'{days} days, '
     if hours != 0:
-        statement += str(f'{hours} hours, ')
+        statement += f'{hours} hours, '
     if minutes != 0:
         statement += str(f'{minutes} minutes, ')
     if seconds != 0:
