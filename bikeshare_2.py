@@ -215,9 +215,9 @@ def helper_seconds_to_statement(seconds):
     if hours != 0:
         statement += f'{hours} hours, '
     if minutes != 0:
-        statement += str(f'{minutes} minutes, ')
+        statement += f'{minutes} minutes, '
     if seconds != 0:
-        statement += str(f'{seconds} seconds.')
+        statement += f'{seconds} seconds.'
 
     return statement
 
